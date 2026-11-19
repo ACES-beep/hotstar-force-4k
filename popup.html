@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hotstar 4K Optimizer</title>
+  <style>
+    body {
+      width: 260px;
+      padding: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background: #0f1014;
+      color: #fff;
+    }
+    h3 {
+      margin: 0 0 10px 0;
+      color: #1f80e0;
+      font-size: 16px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: bold;
+      background: #107c41;
+      margin-bottom: 12px;
+    }
+    .metric {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 13px;
+      color: #aaa;
+    }
+    .metric span:last-child {
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h3>Hotstar 4K Optimizer</h3>
+  <div class="badge">ACTIVE & SPOOFING</div>
+  <div class="metric">
+    <span>Reported Screen:</span>
+    <span>3840 x 2160 (4K)</span>
+  </div>
+  <div class="metric">
+    <span>Codec Override:</span>
+    <span>HEVC / AV1 / VP9</span>
+  </div>
+  <div class="metric">
+    <span>Bandwidth Target:</span>
+    <span>25 Mbps (Max)</span>
+  </div>
+  <div class="metric">
+    <span>Current Stream:</span>
+    <span id="streamRes">Detecting...</span>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

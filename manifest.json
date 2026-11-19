@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Hotstar 4K & Max Quality Optimizer",
+  "version": "1.0.0",
+  "description": "Forces 4K capability detection, spoofs display metrics, and maximizes streaming bitrate on Hotstar.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.hotstar.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.hotstar.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["*://*.hotstar.com/*"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Hotstar 4K Status"
+  }
+}
